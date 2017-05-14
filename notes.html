@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Notes</title>
+		<link rel="stylesheet" href="styles/notes.css" />
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/kLib.js" id="script"></script>
+		<meta charset="UTF-8" />
+	</head>
+	
+	<body>
+		<section unselectable="on" class="header">
+			<header id="pageTitle" unselectable="on" class="header">
+				Notes and observations
+				<div unselectable="on" class="header"> 
+					<span unselectable="on" class="header">
+						*work in progress
+					</span>
+				</div>
+			</header>
+		</section>
+		
+		<section id="articleSection">
+			<article>
+				<h1>
+					Speed optimization
+				</h1>
+				<article>
+					<h2>
+						Basic operations
+					</h2>
+					<article>
+						<h3>
+							Assigning variables
+						</h3>
+						<article>
+							<h4>
+								Assigning integers
+							</h4>
+							Although slightly slower, second method is preffered
+							<code class="block">
+								b=13; //slowest (3)
+								
+								var b=13; //slower (2) but preffered
+								
+								var b; //fastest (1)
+								b=13;
+							</code>
+							<aside>
+								see test5.js
+							</aside>
+						</article>
+						<article>
+							<h4>
+								Assigning arrays
+							</h4>
+							Literal notation is faster in all browser, excepting minor differences in Firefox and Konqueror.
+							<code class="block">
+								var c; //slower (3)
+								c=new Array(1,2,3);
+								
+								var c; //faster (2)
+								c=[1,2,3];
+								
+								var c=new Array(1,2,3); //slowest (4)
+								
+								var c=[1,2,3]; //dastest (1)
+							</code>
+							<aside>
+								see test5.js
+							</aside>
+						</article>						
+					</article>
+				</article>
+			</article>		
+		</section>		
+		<script type="text/javascript" src="scripts/notes.js" id="script"></script>
+	</body>
+</html>

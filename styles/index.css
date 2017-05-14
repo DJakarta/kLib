@@ -1,0 +1,12 @@
+*:not(canvas) {
+padding: 0px;
+margin: 0px;
+}
+
+canvas {
+cursor: url('../curs/target.cur'), crosshair;
+}
+
+#testing {
+background-color: #ffff00;
+}

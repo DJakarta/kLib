@@ -1,0 +1,12 @@
+body {
+text-align: center;
+}
+
+:not(body) {
+text-align: left;
+}
+
+canvas {
+background-color: #ffffff;
+border: 1px dashed black;
+}

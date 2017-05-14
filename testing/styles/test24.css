@@ -1,0 +1,17 @@
+div {
+width: 130px;
+height: 110px;
+border: 1px solid black;
+}
+
+.ceva:hover {
+background-color: #ffffcc;
+}
+
+.altufel:hover {
+border: 1px dashed grey;
+}
+
+.alabala {
+background-color: #ccccff;
+}
